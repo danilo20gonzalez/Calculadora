@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(27, 148, 132);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    background-color: rgb(72, 76, 73);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.border {
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+        "Pantalla Pantalla Pantalla Pantalla"
+        "AC slash por menos"
+        "7 8 9 mas"
+        "4 5 6 mas"
+        "1 2 3 igual"
+        "cero cero punto igual";
+    gap: 10px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#Pantalla {
+    grid-area: Pantalla;
+    height: 60px;
+    width: 100%;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#AC {
+    grid-area: AC;
+}
+
+#slash {
+    grid-area: slash;
+}
+
+#por {
+    grid-area: por;
+}
+
+#menos {
+    grid-area: menos;
+}
+
+#mas {
+    grid-area: mas;
+    height: 110px;
+}
+
+#igual {
+    grid-area: igual;
+    height: 110px;
+}
+
+#punto {
+    grid-area: punto;
+}
+
+#cero {
+    grid-area: 0;
+    width: 120px;
+}
+
+
